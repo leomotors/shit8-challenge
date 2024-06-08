@@ -1,0 +1,31 @@
+---
+interface Props {
+  index: number;
+  question: string;
+  choices: string[];
+}
+
+const { index, question, choices } = Astro.props;
+
+const shuffledChoices = choices.sort(() => Math.random() - 0.5);
+---
+
+<h3>{index}{")"} {question}</h3>
+
+<ul style="list-style-type: none">
+  {
+    shuffledChoices.map((choice) => (
+      <li>
+        <label>
+          <input
+            type="radio"
+            name={`question-${index}`}
+            value={choice}
+            required
+          />
+          <span>{choice}</span>
+        </label>
+      </li>
+    ))
+  }
+</ul>
