@@ -17,7 +17,12 @@ const { ticketSeen } = await getTicket();
 
   <p>Complete all the questions correctly to win the ticket</p>
 
-  <p>Ticket Status: {ticketSeen ? "Safe" : "Someone completed the quiz"}</p>
+  <p>
+    The topic of the quiz is any topics we want to ask, because this target also
+    welcome non-dev to join the event!
+  </p>
+
+  <p>Ticket Status: {ticketSeen ? "Someone completed the quiz" : "Safe"}</p>
 
   <form action="/quiz/result" method="POST">
     {

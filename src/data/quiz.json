@@ -1,24 +1,233 @@
 {
   "questions": [
     {
-      "question": "What is the capital of France?",
-      "correct": "Paris",
-      "wrong": ["London", "Berlin", "Madrid"]
+      "question": "งานนี้ชื่ออะไร",
+      "correct": "The Stipud Honkathack in Thailand Dan of Smile ครั้งที่ 8",
+      "wrong": [
+        "The โง่ Hackathon ครั้งที่ 8 เเห่งประเทศ Thailand",
+        "The ๘th Stupid Hackathon Thailand",
+        "แฮคโง่ ๆ ครั้งที่ 8 ประเทศไทย"
+      ]
     },
     {
-      "question": "What is the capital of Germany?",
-      "correct": "Berlin",
-      "wrong": ["Paris", "London", "Madrid"]
+      "question": "งานนี้จัดที่ไหน",
+      "correct": "คณะวิศวะฯ จุฬาฯ",
+      "wrong": ["ร้านเหล้าบรรทัดทอง", "ซานฟรานซิสโก", "หัวหิน"]
+    },
+
+    {
+      "question": "งานนี้ไม่เป็นโปรแกรมเมอร์ เข้าได้ไหม",
+      "correct": "ได้",
+      "wrong": [
+        "ได้ ถ้ามีเพื่อนเป็นโปรแกรมเมอร์",
+        "ต้องจบ ป.ตรี สาขาที่เกี่ยวข้องเท่านั้น",
+        "ไม่ได้"
+      ]
     },
     {
-      "question": "What is the capital of Spain?",
-      "correct": "Madrid",
-      "wrong": ["Paris", "London", "Berlin"]
+      "question": "งานนี้จัดวันไหน",
+      "correct": "13 กรกฎาคม 2567",
+      "wrong": ["24 มิถุนายน 2567", "2 กรกฎาคม 2567", "30 กันยายน 2567"]
     },
     {
-      "question": "What is the capital of England?",
-      "correct": "London",
-      "wrong": ["Paris", "Berlin", "Madrid"]
+      "question": "1 + 1 = ?",
+      "correct": "2",
+      "wrong": ["1", "3", "4"]
+    },
+    {
+      "question": "ข้อใดถูก (ใบ้: ไปดูหน้าหลักของเว็บนี้)",
+      "correct": "しかのこのこのここしたんたん",
+      "wrong": [
+        "しかのこのこのこのしたんたん",
+        "したのこのこのこしたんたん",
+        "しかのこのこのこここしたんたん"
+      ]
+    },
+    {
+      "question": "วิศวะจุฬาอยู่ไหน",
+      "correct": "ติดถนนอังรี",
+      "wrong": ["BTS พญาไท", "MRT สามยอด", "บรรทัดทอง"]
+    },
+
+    {
+      "question": "TLD ใด ไม่รองรับภาษาไทย (แก้มือ ปีที่แล้วโจทย์ผิด)",
+      "correct": "รองรับหมด ถ้าคุณใช้ Cloudflare",
+      "wrong": [".me", ".com", ".net"]
+    },
+    {
+      "question": "ใน Hacktoberfest ปีที่ผ่านมา คุณต้องส่ง PR สำเร็จกี่อันจึงจะได้เสื้อ",
+      "correct": "เขาไม่แจกแล้ว",
+      "wrong": ["3", "4", "5"]
+    },
+    {
+      "question": "อะไรแรงสุด",
+      "correct": "Apple M3 Max",
+      "wrong": ["Apple M2 Max", "Apple M1 Max", "Black Label"]
+    },
+    {
+      "question": "บรรทัดทองมีอะไร",
+      "correct": "ถูกทุกข้อ",
+      "wrong": ["หมูกระทะ", "สวน", "ร้านเหล้า"]
+    },
+    {
+      "question": "ข้อใดมีความหมายสอดคล้องกับข้อความต่อไปนี้ “รวบรวมทีละเล็กละน้อย ทำอะไรที่ประกอบด้วยส่วนเล็กส่วนน้อยจนสำเร็จเป็นรูปเป็นร่างขึ้นมา” (O-NET 59)",
+      "correct": "เก็บเบี้ยใต้ถุนร้าน",
+      "wrong": [
+        "ก่อร่างสร้างตัว",
+        "เกี่ยวแฝกมุงป่า",
+        "ผัวหาบเมียคอน",
+        "งมเข็มในมหาสมุทร"
+      ]
+    },
+    {
+      "question": "ข้อใดไม่ใช่พระราชอำนาจของพระมหากษัตริย์ตามรัฐธรรมนูญแห่งราชอาณาจักรไทย",
+      "correct": "การตรากฎกระทรวง",
+      "wrong": [
+        "การเรียกประชุมรัฐสภา",
+        "การแต่งตั้งข้าราชการระดับสูง",
+        "การทำหนังสือสัญญาสันติภาพ",
+        "การให้รัฐมนตรีพ้นจากตำแหน่ง"
+      ]
+    },
+    {
+      "question": "ข้อใดคือบรรทัดแรกที่ปรากฏถัดจากตราครุฑในคำพิพากษาของศาล",
+      "correct": "ในพระปรมาภิไธยพระมหากษัตริย์",
+      "wrong": ["ประเภทคดี", "ชื่อศาล", "วันที่", "เรื่อง"]
+    },
+    {
+      "question": "เลขในข้อไหนไม่ใช่จำนวนเฉพาะ",
+      "correct": "4,675,230,271",
+      "wrong": ["999,850,289", "2,948,372,863", "5,948,379,599"]
+    },
+    {
+      "question": "ผู้ใดไม่ปฏิบัติตามคำสั่งของพนักงานตรวจแรงงาน ต้องระวางโทษ",
+      "correct": "จำคุกไม่เกินหนึ่งปี หรือปรับไม่เกินสองหมื่นบาท หรือทั้งจำทั้งปรับ",
+      "wrong": [
+        "ปรับไม่เกินสองหมื่นบาท",
+        "จำคุกไม่เกินหกเดือน หรือปรับไม่เกินหนึ่งหมื่นบาท หรือทั้งจำทั้งปรับ",
+        "ประหารชีวิต จำคุกตลอดชีวิต หรือจำคุกตั้งแต่สิบห้าปีถึงยี่สิบปี"
+      ]
+    },
+    {
+      "question": "สาหร่ายเป็นใบเลี้ยงเดี่ยวหรือใบเลี้ยงคู่",
+      "correct": "ไม่ใช่พืช",
+      "wrong": ["ใบเลี้ยงเดี่ยว", "ใบเลี้ยงคู่"]
+    },
+    {
+      "question": "ก่อนที่จะกอบกู้เอกราช พระเจ้าตากสินมหาราชทรงเดินทางไปตั้งฐานกำลังที่เมืองใด",
+      "correct": "เมืองจันทบุรี",
+      "wrong": ["เมืองพิษณุโลก", "เมืองลพบุรี", "เมืองเพชรบุรี"]
+    },
+    {
+      "question": "1/0 = ?",
+      "correct": "Undefined",
+      "wrong": ["Infinity", "0", "Negative Infinity"]
+    },
+    {
+      "question": "ใครเป็นคนจัดงานนี้",
+      "correct": "Creatorsgarten",
+      "wrong": ["Creators Garten", "Creatorsgarden", "Creators Garden"]
+    },
+    {
+      "question": "Error Recognition: Luna scanned the brains of teens while they performed an antisaccade task, a sort of eyes-only video game where you have to stop yourself of looking at a suddenly appearing light.",
+      "correct": "of looking at",
+      "wrong": ["while", "antisaccade", "eyes-only"]
+    },
+    {
+      "question": "飾る",
+      "correct": "かざる",
+      "wrong": ["しる", "かぶる", "ふる"]
+    },
+    {
+      "question": "งานนี้เป็นงานประเภทใด (อ้างอิงจากหน้า Eventpop)",
+      "correct": "ต่อยมวย",
+      "wrong": ["การแข่งขัน", "งานทอล์กโชว์", "ก๊งเหล้า"]
+    },
+    {
+      "question": "ระหว่างที่คุณเข้าร่วมงานนี้แล้วเกิดล้มหัวแตก โรงพยาบาลที่ใกล้ที่สุดคือที่ไหน",
+      "correct": "โรงพยาบาลจุฬาลงกรณ์ สภากาชาดไทย",
+      "wrong": [
+        "โรงพยาบาลบำรุงราษฎร์ อินเตอร์เนชั่นแนล",
+        "โรงพยาบาลศิริราช",
+        "โรงพยาบาลเซนต์หลุยส์"
+      ]
+    },
+    {
+      "question": "Corollary",
+      "correct": "A true statement that is a simple deduction from a theorem or proposition",
+      "wrong": [
+        "A true statement used in proving other true statements",
+        "A statement that has been proven to be true",
+        "A less important but nonetheless interesting true statement",
+        "An explanation of the mathematical meaning of a word"
+      ]
+    },
+    {
+      "question": "What is the capital of Thailand",
+      "correct": "Bangkok",
+      "wrong": ["Chiang Mai", "Phuket", "Pattaya"]
+    },
+    {
+      "question": "เส้นเลือดที่ออกจากหัวใจไปทั่วร่างกายคือเส้นเลือดชนิดใด",
+      "correct": "Aorta",
+      "wrong": ["Vena Cava", "Pulmonary Artery", "Pulmonary Vein"]
+    },
+    {
+      "question": "MBK ชั้น 7 มีอะไร",
+      "correct": "ถูกทุกข้อ",
+      "wrong": ["เมดคาเฟ่", "บุฟเฟ่ต์ชาบู", "ตู้เกม"]
+    },
+    {
+      "question": "ถนนที่อยู่หน้า Central World คือถนนอะไร",
+      "correct": "ถนนพระราม 1",
+      "wrong": ["ถนนสีลม", "ถนนสุขุมวิท", "ถนนเพลินจิต"]
+    },
+    {
+      "question": "ถนนที่อยู่หน้าที่จัดงาน Stupid Hack เมื่อปีที่แล้วคือถนนอะไร",
+      "correct": "ถนนกรุงธนบุรี",
+      "wrong": ["ถนนสาทร", "ถนนสุขุมวิท", "ถนนพหลโยธิน"]
+    },
+    {
+      "question": "เลขใดเกี่ยวข้องกับ IKEA (ใบ้: SCP)",
+      "correct": "3008",
+      "wrong": ["087", "173", "096"]
+    },
+    {
+      "question": "ข้อใดต่างจากพวก",
+      "correct": "楼",
+      "wrong": ["桜", "櫻", "樱"]
+    },
+    {
+      "question": "ชื่อทางการของประเทศไต้หวัน",
+      "correct": "สาธารณรัฐจีน",
+      "wrong": [
+        "สาธารณรัฐประชาชนจีน",
+        "สาธารณรัฐไต้หวัน",
+        "สาธารณรัฐประชาชนไต้หวัน"
+      ]
+    },
+    {
+      "question": "Quiz นี้ มีกี่ข้อ",
+      "correct": "34",
+      "wrong": [
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42"
+      ]
     }
   ]
 }

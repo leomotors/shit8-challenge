@@ -5,12 +5,16 @@ interface Props {
   choices: string[];
 }
 
+import { ticketIndex } from "../data/ticketIndex";
+
 const { index, question, choices } = Astro.props;
 
 const shuffledChoices = choices.sort(() => Math.random() - 0.5);
+
+const realIndex = ticketIndex[index - 1];
 ---
 
-<h3>{index}{")"} {question}</h3>
+<h3>{realIndex}{")"} {question}</h3>
 
 <ul style="list-style-type: none">
   {
