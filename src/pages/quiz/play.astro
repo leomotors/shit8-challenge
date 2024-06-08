@@ -1,11 +1,12 @@
 ---
-export const prerender = false;
-
 import Layout from "../../layouts/Layout.astro";
 
 import Question from "../../components/Question.astro";
 
 import { questions } from "../../data/quiz.json" assert { type: "json" };
+import { getTicket } from "../../data/getTicket";
+
+const { ticketSeen } = await getTicket();
 ---
 
 <Layout
@@ -16,7 +17,7 @@ import { questions } from "../../data/quiz.json" assert { type: "json" };
 
   <p>Complete all the questions correctly to win the ticket</p>
 
-  <p>Ticket Status: Unknown</p>
+  <p>Ticket Status: {ticketSeen ? "Safe" : "Someone completed the quiz"}</p>
 
   <form action="/quiz/result" method="POST">
     {

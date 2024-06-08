@@ -5,18 +5,19 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "node ./dist/server/entry.mjs",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/check": "0.7.0",
+    "@astrojs/node": "8.2.5",
     "astro": "4.10.0",
     "typescript": "5.4.5"
   },
   "packageManager": "pnpm@9.2.0",
   "devDependencies": {
-    "@types/node": "^20.14.2"
+    "@types/node": "20.14.2"
   }
 }
