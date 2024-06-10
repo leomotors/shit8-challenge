@@ -4,9 +4,9 @@ import Layout from "../../layouts/Layout.astro";
 import Question from "../../components/Question.astro";
 
 import { questions } from "../../data/quiz.json" assert { type: "json" };
-import { getTicket } from "../../data/getTicket";
+import { getTicketStatus } from "../../data/getTicket";
 
-const { ticketSeen } = await getTicket();
+const ticketSeen = await getTicketStatus();
 ---
 
 <Layout
