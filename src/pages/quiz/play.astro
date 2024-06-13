@@ -1,0 +1,45 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import Question from "../../components/Question.astro";
+
+import { questions } from "../../data/quiz.json" assert { type: "json" };
+import { getTicketStatus } from "../../data/getTicket";
+
+const ticketSeen = await getTicketStatus();
+---
+
+<Layout
+  title="Stupid Quiz"
+  description="Complete the Quiz to get tickets to shit8"
+>
+  <h1>Stupid Quiz</h1>
+
+  <p>Complete all the questions correctly to win the ticket</p>
+
+  <p>
+    The topic of the quiz is any topics we want to ask, because this event also
+    welcome non-dev to join the event!
+  </p>
+
+  <p>Ticket Status: {ticketSeen ? "Someone completed the quiz" : "Safe"}</p>
+
+  <form action="/quiz/result" method="POST">
+    {
+      questions.map((q, index) => (
+        <Question
+          index={index + 1}
+          question={q.question}
+          choices={[q.correct, ...q.wrong]}
+        />
+      ))
+    }
+
+    <input type="radio" name="terms" value="accepted" required />
+    <label for="terms">I have checked by answers</label>
+
+    <br />
+
+    <button type="submit">Submit</button>
+  </form>
+</Layout>
