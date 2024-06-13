@@ -1,4 +1,8 @@
 ---
+import { quizTimeGuard } from "../../data/timeGuard";
+const timeCheck = quizTimeGuard();
+if (timeCheck) return timeCheck;
+
 import Layout from "../../layouts/Layout.astro";
 
 import Question from "../../components/Question.astro";
