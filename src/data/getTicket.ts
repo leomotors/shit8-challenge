@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 
 const TICKET_DIR = "node_modules";
 
-const ticket = "WONDERHOY";
+const ticket = "物語、動き出すんだ　感じあって響きあってくように";
 
 export async function getTicketStatus() {
   const ticketSeen = (await fs.readdir(TICKET_DIR)).some(

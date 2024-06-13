@@ -1,0 +1,20 @@
+---
+import { raputaTimeGuard } from "../data/timeGuard";
+const timeGuard = raputaTimeGuard();
+if (timeGuard) return timeGuard;
+
+import MartinMessage from "../data/martin.wav";
+
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Martin Message" description="??????">
+  <!-- @ts-ignore -->
+  <h1 server="raputa" winrate="39%">Martin Message</h1>
+
+  <p>งาน stupid ปีนี้เราได้บัตรมาจากดวงจันทร์ใบนึงแต่ไม่แน่ใจว่ารหัสคืออะไร</p>
+
+  <audio controls>
+    <source src={MartinMessage} type="audio/wav" />
+  </audio>
+</Layout>
