@@ -4,14 +4,12 @@ const timeGuard = finalBatchGuard();
 if (timeGuard) return timeGuard;
 
 import Layout from "../layouts/Layout.astro";
-
-const announced = new Date() >= new Date("2024-06-16T13:00:00Z");
 ---
 
 <Layout title="Minecraft Challenge" description="Join our minecraft server">
   <h1>Minecraft Challenge</h1>
 
-  <p>Server IP = {announced ? "uddy-cloud.thddns.net" : "TBA"}</p>
+  <p>Server IP = uddy-cloud.thddns.net</p>
   <p>Supported Client: Java Edition 1.20.6</p>
 
   <p>
@@ -32,10 +30,15 @@ const announced = new Date() >= new Date("2024-06-16T13:00:00Z");
     </li>
 
     <li>
-      <b>Traveling Salesman</b> - Collect 7 Dragon Balls (Don't worry, we have Dragon
-      Ball locator for you)
+      <p>
+        <b>Traveling Salesman</b> - Collect 7 Dragon Balls (Don't worry, we have
+        Dragon Ball locator for you)
+      </p>
 
-      <p>Locations</p>
+      <p>
+        Locations - Step on Command Block to collect Dragon Ball, it will locate
+        near that location
+      </p>
       <ul>
         <!-- TODO: Delete Comment (Astro don't do that) -->
         <li><!-- Igloo --> -1896 -186</li>
@@ -46,10 +49,6 @@ const announced = new Date() >= new Date("2024-06-16T13:00:00Z");
         <li><!-- Pillager Outpost --> -992 -144</li>
         <li><!-- Jungle Pyramid --> 1808 -1472</li>
       </ul>
-    </li>
-
-    <li>
-      <b>คิดแป๊ป</b>
     </li>
   </ul>
 </Layout>
