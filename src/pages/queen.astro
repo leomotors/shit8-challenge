@@ -1,0 +1,32 @@
+---
+import { finalBatchGuard } from "../data/timeGuard";
+const timeGuard = finalBatchGuard();
+if (timeGuard) return timeGuard;
+
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Queen"
+  description="มีสตาฟคนนึงเค้าส่งตั๋วมาให้ แต่ว่ามันเข้ารหัสอยู่ เพื่อน ๆ พอจะรู้รหัสผ่านไหมครับ"
+>
+  <h1>Queen</h1>
+
+  <p>
+    มีสตาฟคนนึงเค้าส่งตั๋วมาให้ แต่ว่ามันเข้ารหัสอยู่ เพื่อน ๆ
+    พอจะรู้รหัสผ่านไหมครับ ปล. สตาฟคนนั้นชอบฟัง Queen มาก
+  </p>
+
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/-tJYN-eG1zk?si=Vsv3GCeSgORd8G0D"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe>
+
+  <br />
+
+  <a href="/shit8.zip" download>Download File</a>
+</Layout>

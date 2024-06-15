@@ -1,6 +1,6 @@
 ---
-import { mcTimeGuard } from "../data/timeGuard";
-const timeGuard = mcTimeGuard();
+import { finalBatchGuard } from "../data/timeGuard";
+const timeGuard = finalBatchGuard();
 if (timeGuard) return timeGuard;
 
 import Layout from "../layouts/Layout.astro";
@@ -37,6 +37,7 @@ const announced = new Date() >= new Date("2024-06-16T13:00:00Z");
 
       <p>Locations</p>
       <ul>
+        <!-- TODO: Delete Comment (Astro don't do that) -->
         <li><!-- Igloo --> -1896 -186</li>
         <li><!-- Ocean Ruin --> -240 -560</li>
         <li><!-- Shipwreck Beached --> -1296 -2080</li>
