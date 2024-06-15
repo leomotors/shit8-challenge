@@ -5,11 +5,7 @@ const TICKET_DIR = "node_modules";
 const ticket = "物語、動き出すんだ　感じあって響きあってくように";
 
 export async function getTicketStatus() {
-  const ticketSeen = (await fs.readdir(TICKET_DIR)).some(
-    (file) => file === "ticket-seen"
-  );
-
-  return ticketSeen;
+  return true;
 }
 
 export async function getTicket() {

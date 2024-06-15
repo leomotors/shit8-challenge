@@ -1,0 +1,54 @@
+---
+import { mcTimeGuard } from "../data/timeGuard";
+const timeGuard = mcTimeGuard();
+if (timeGuard) return timeGuard;
+
+import Layout from "../layouts/Layout.astro";
+
+const announced = new Date() >= new Date("2024-06-16T13:00:00Z");
+---
+
+<Layout title="Minecraft Challenge" description="Join our minecraft server">
+  <h1>Minecraft Challenge</h1>
+
+  <p>Server IP = {announced ? "uddy-cloud.thddns.net" : "TBA"}</p>
+  <p>Supported Client: Java Edition 1.20.6</p>
+
+  <p>
+    <b>Note</b>: Even though it's stupid hackathon but please don't use cheats!
+    We are grown Adult.
+  </p>
+
+  <h2>Missions</h2>
+  <ul>
+    <li>
+      <b>Trade Offer</b> - As shown in Poster, you will trade Dragon Egg with the
+      ticket. However, villager is currently unemployed because they were replaced
+      by AI.
+    </li>
+
+    <li>
+      <b>You could travel the world</b> - Travel 10 Kilometers North
+    </li>
+
+    <li>
+      <b>Traveling Salesman</b> - Collect 7 Dragon Balls (Don't worry, we have Dragon
+      Ball locator for you)
+
+      <p>Locations</p>
+      <ul>
+        <li><!-- Igloo --> -1896 -186</li>
+        <li><!-- Ocean Ruin --> -240 -560</li>
+        <li><!-- Shipwreck Beached --> -1296 -2080</li>
+        <li><!-- Ancient City --> 208 -240</li>
+        <li><!-- Ocean Monument --> 655 -692</li>
+        <li><!-- Pillager Outpost --> -992 -144</li>
+        <li><!-- Jungle Pyramid --> 1808 -1472</li>
+      </ul>
+    </li>
+
+    <li>
+      <b>คิดแป๊ป</b>
+    </li>
+  </ul>
+</Layout>
