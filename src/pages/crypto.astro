@@ -1,7 +1,5 @@
 ---
-import { finalBatchGuard } from "../data/timeGuard";
-const timeGuard = finalBatchGuard();
-if (timeGuard) return timeGuard;
+export const prerender = true;
 
 import Layout from "../layouts/Layout.astro";
 ---
